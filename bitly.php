@@ -28,3 +28,6 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
 $result = curl_exec($ch);
 
 print_r($result);
+
+$teklink = json_decode($result, true);
+echo $teklink["link"]; // tek link almak için
